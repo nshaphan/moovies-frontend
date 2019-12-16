@@ -1,16 +1,9 @@
-import React, { Component} from "react";
-import "./App.css";
-import List from './components/ShoppingList';
+import React from 'react';
+import './App.scss';
+import MainRoute from './routes/main.route';
 
-class App extends Component{
-  render(){
-    return(
-      <div className="App">
-        <h1> Hello, World! </h1>
-        <List />
-      </div>
-    );
-  }
-}
-
-export default App;
+export default () => {
+  return (
+    <MainRoute />
+  );
+};
