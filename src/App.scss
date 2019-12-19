@@ -1,4 +1,53 @@
+body {
+  background: #141E30;
+  
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30);
+}
+.logo {
+  padding: .6rem;
+  color: #ff6347;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+::selection {
+  background: #ff6a00;
+}
+
 .container {
-    display: flex;
-    flex-flow: row nowrap;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.movie-box, .dict-box {
+  border-radius: .5rem;
+  background-color: #dfe3e6;
+  background: linear-gradient(to right, #243B55, #141E30);
+  
+  padding: .9rem;
+  margin: .5rem;
+  transition: height .35s ease-in-out;
+  min-height: 400px;
+}
+
+.title {
+  font-family: 'Alfa Slab One', cursive;
+  color: #f0f8ff;
+}
+
+.movie-box .title {
+  font-size: large;
+  color: linear-gradient(to right, #ff6a00, #ee0979);
+}
+.description {
+  font-family: 'Roboto', sans-serif;
+  color: #a9a9a9;
 }

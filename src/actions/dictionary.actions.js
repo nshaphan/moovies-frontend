@@ -13,15 +13,30 @@ export const setActiveWord = () => {
   };
 };
 
+export const setActiveDefinitionIndex = (index) => {
+  return {
+    type: types.SET_ACTIVE_DEFINITION_INDEX,
+    index
+  };
+};
+
 export const setActiveDefinition = () => {
   return {
     type: types.SET_ACTIVE_DEFINITION
   };
 };
 
-export const wordsSelectedSuccess = (selection) => {
+export const setActiveWordIndex = (index) => {
   return {
-    type: types.WORDS_SELECTED_SUCCESS,
-    selection
+    type: types.SET_ACTIVE_WORD_INDEX,
+    index
+  };
+};
+
+
+export const wordsSelectionSuccess = (words) => {
+  return {
+    type: types.WORDS_SELECTION_SUCCESS,
+    words
   };
 };

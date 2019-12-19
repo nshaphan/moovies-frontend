@@ -1,18 +1,22 @@
 import React from 'react';
 
 const Dictionary = (props) => {
+  if (props.definition === '') {
+    return (<div className="dict-box">
+      <div><h3 className="title">Dictionary</h3></div>
+      <h5>No word selected</h5>
+    </div>);
+  }
+
   return (
-    <div>
+    <div className="dict-box">
+      <div><h3 className="title">Dictionary</h3></div>
       <div className="title">
-        <h4>Dangerous</h4>
+        <h4>{ props.definition.word }</h4>
       </div>
       <div className="description">
         <p>
-            By now you’ve probably noticed that as you separate your
-            Container and Presentational Components, many of your
-            Presentational ones just have a render method.
-            In these cases, React now allows the component
-            to be written as a single function
+          { props.definition.definition.replace('[', ' ').replace(']', ' ') }
         </p>
       </div>
       <div className="title">
@@ -20,11 +24,7 @@ const Dictionary = (props) => {
       </div>
       <div className="description">
         <p>
-            By now you’ve probably noticed that as you separate your
-            Container and Presentational Components, many of your
-            Presentational ones just have a render method.
-            In these cases, React now allows the component
-            to be written as a single function
+          { props.definition.example }
         </p>
       </div>
     </div>
