@@ -7,9 +7,8 @@ export const getMoviesSuccess = (movies) => {
   };
 };
 
-export const setRandomMovie = (movie) => {
+export const setRandomMovie = () => {
   return {
-    type: types.SET_ACTIVE_MOVIE,
-    movie
+    type: types.SET_ACTIVE_MOVIE
   };
 };

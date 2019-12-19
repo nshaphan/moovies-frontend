@@ -2,7 +2,9 @@ import * as types from '../actions/actionTypes';
 
 const initialState = {
   definitions: [],
-  activeDefinition: {}
+  words: [],
+  activeDefinition: 0,
+  activeWord: 0
 };
 
 const dictionaryReducer = (state = initialState, action) => {

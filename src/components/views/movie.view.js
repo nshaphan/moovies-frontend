@@ -1,21 +1,21 @@
 import React from 'react';
+import { createMarkup } from '../../utils/html.util';
 
 const Movie = (props) => {
-  console.log(props.movies);
+  const show = props.movie.show;
+  if (show === undefined) {
+    return <div> Loading...</div>;
+  }
+
   return (
     <div>
       <div className="title">
-        <h1>12 Monkeys</h1>
+        <h1>{ show.name }</h1>
       </div>
-      <div className="description">
-        <p>
-            By now you’ve probably noticed that as you separate your
-            Container and Presentational Components, many of your
-            Presentational ones just have a render method.
-            In these cases, React now allows the component
-            to be written as a single function
-        </p>
-      </div>
+      <div
+        className="description"
+        dangerouslySetInnerHTML={createMarkup(show.summary)}
+        onMouseUp={props.getSelection} />
     </div>
   );
 };

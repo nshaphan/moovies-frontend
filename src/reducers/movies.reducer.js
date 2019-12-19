@@ -11,7 +11,8 @@ const movieReducer = (state = initialState, action) => {
     return Object.assign({}, state, { movies: action.movies });
 
   case types.SET_ACTIVE_MOVIE:
-    return Object.assign({}, state, { activeMovie: action.movie });
+    const randomMovie = Math.floor(Math.random() * state.movies.length);
+    return Object.assign({}, state, { activeMovie: state.movies[randomMovie] });
 
   default:
     return state;
