@@ -34,4 +34,4 @@ const dictionaryReducer = (state = initialState, action) => {
   }
 };
 
-export default dictionaryReducer;
+export { dictionaryReducer, initialState };
