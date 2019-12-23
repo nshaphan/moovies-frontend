@@ -1,7 +1,14 @@
 /* eslint-disable no-undef */
 import { dictionaryReducer, initialState } from "../reducers/dictionary.reducer";
 import "@testing-library/jest-dom/extend-expect";
-import { GET_DEFINITIONS_SUCCESS, SET_ACTIVE_DEFINITION, SET_ACTIVE_WORD, SET_ACTIVE_WORD_INDEX, SET_ACTIVE_DEFINITION_INDEX, WORDS_SELECTION_SUCCESS } from "../actions/actionTypes";
+import {
+  GET_DEFINITIONS_SUCCESS,
+  SET_ACTIVE_DEFINITION,
+  SET_ACTIVE_WORD,
+  SET_ACTIVE_WORD_INDEX,
+  SET_ACTIVE_DEFINITION_INDEX,
+  WORDS_SELECTION_SUCCESS
+} from "../actions/actionTypes";
 
 describe('dictionary reducer', () => {
   test('Initial test', () => {

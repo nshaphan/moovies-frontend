@@ -1,4 +1,4 @@
-## Moovies Frontend [![Build Status](https://travis-ci.org/nshaphan/moovies-frontend.svg?branch=develop)](https://travis-ci.org/nshaphan/moovies-frontend) [testing badge]
+## Moovies Frontend [![Build Status](https://travis-ci.org/nshaphan/moovies-frontend.svg?branch=develop)](https://travis-ci.org/nshaphan/moovies-frontend) [![Coverage Status](https://coveralls.io/repos/github/nshaphan/moovies-frontend/badge.svg?branch=develop)](https://coveralls.io/github/nshaphan/moovies-frontend?branch=develop)
 
 Moovies is an web app which recommends movies and provides a dictionary to define movie description words
 
