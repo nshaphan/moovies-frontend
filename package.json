@@ -54,6 +54,7 @@
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "image-webpack-loader": "^6.0.0",
+    "nock": "^11.7.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.12.18",
