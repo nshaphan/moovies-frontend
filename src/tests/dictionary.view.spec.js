@@ -5,7 +5,7 @@ import Dictionary from "../components/views/dictionary.view";
 
 describe('Dictionary view', () => {
   afterEach(cleanup);
-  test('Select word message must be displayed when no word selected', () => {
+  test('Should not render definition component when no word selected', () => {
     const props = '';
 
     const { getByText } = render(
@@ -16,7 +16,7 @@ describe('Dictionary view', () => {
     expect(textRendered).toBeDefined();
   });
 
-  test('Component can render properly', () => {
+  test('Component should render properly if valid props are supplied', () => {
     const props = {
       word: 'google',
       definition: 'google is a search engine',

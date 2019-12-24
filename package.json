@@ -4,9 +4,8 @@
   "description": "",
   "main": "src/ndex.js",
   "scripts": {
-    "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "test:coverage": "jest --coverage --verbose true",
+    "test": "jest --coverage --verbose true",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "watch": "webpack-dev-server --mode development --hot --watch",
     "build": "webpack --mode production",
@@ -54,6 +53,7 @@
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "image-webpack-loader": "^6.0.0",
+    "nock": "^11.7.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.12.18",
