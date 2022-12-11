@@ -52,7 +52,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "bootstrap": "^4.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "image-webpack-loader": "^6.0.0",
     "nock": "^11.7.0",
     "react": "^16.12.0",
